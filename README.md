@@ -55,4 +55,4 @@ For a JDK that does not support `--no-fonts`, omit that option. Open `docs/index
 
 ## Contributors
 
-The original application credits **Aredth Sanchez, Sofia Vargas, and Ben Silva**. These credits remain in the source. This repository replaces assignment-number folder names and historical assignment comments with project-specific documentation.
+The original application credits **Aredth Sanchez, Sofia Vargas, and Ben Silva**. These credits remain in the source. This repository replaces comments with project-specific documentation.
