@@ -24,7 +24,7 @@ Requires JDK 17 or newer, with no external libraries.
 java -cp out chess.app.ChessMoveValidator
 ```
 
-Enter six different piece types, their colors and starting coordinates, followed by a target square. This snapshot validates movement geometry only; it does not implement a complete chess match or update piece positions after validation.
+Enter six different piece types, their colors and starting coordinates, followed by a target square. This snapshot validates movement geometry only; it does not implement a complete chess match or update piece positions after validation but it will in the near future.
 
 ## Files
 
