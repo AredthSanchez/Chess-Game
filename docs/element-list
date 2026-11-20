@@ -1,0 +1,6 @@
+chess.app
+chess.board
+chess.enums
+chess.exceptions
+chess.figures
+chess.interfaces

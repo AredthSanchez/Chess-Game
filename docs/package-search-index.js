@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html","k":"18"},{"l":"chess.app"},{"l":"chess.board"},{"l":"chess.enums"},{"l":"chess.exceptions"},{"l":"chess.figures"},{"l":"chess.interfaces"}];updateSearchResults();
