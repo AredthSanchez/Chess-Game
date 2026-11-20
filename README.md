@@ -10,7 +10,7 @@ A Java console application that checks whether each chess piece can move from it
 - Custom exceptions and input prompts that retry invalid selections.
 - Generated Javadoc in [`docs/`](docs/index.html).
 
-This validates individual movement geometry. It does not implement a complete chess match, occupied-square rules, check/checkmate, castling, promotion, en passant, or two-square pawn starts. A successful validation does not update the piece's stored position.
+This validates individual movement geometry. It does not implement a complete chess match, occupied-square rules, check/checkmate, castling, promotion, en passant, or two-square pawn starts. A successful validation does not update the piece's stored position. This would be implemented upon as I keep working on the project.
 
 ## Requirements and running
 
