@@ -1,37 +1,41 @@
-# Chess Move Validator
+# Chess Game
 
-A Java console application that checks whether each chess piece can move from its starting square to a selected target square.
+A Java chess project with an interactive Swing graphical interface and piece-specific movement validation.
 
 ## Features
 
-- Six distinct piece types: pawn, rook, bishop, knight, king, and queen.
-- White and black piece colors, enum-based columns, and validated board coordinates.
-- Abstract classes, inheritance, and movement interfaces.
-- Custom exceptions and input prompts that retry invalid selections.
-- Generated Javadoc in [`docs/`](docs/index.html).
+- Interactive Java Swing chess interface with an 8-by-8 board.
+- Six piece types: pawn, rook, bishop, knight, king, and queen.
+- Collections and generics to organize chess pieces and game data.
+- Lambda functions for graphical interface event handling.
+- Abstract classes, inheritance, interfaces, enums, and custom exceptions.
+- Generated HTML API documentation with Javadoc.
 
-This validates individual movement geometry. It does not implement a complete chess match, occupied-square rules, check/checkmate, castling, promotion, en passant, or two-square pawn starts. A successful validation does not update the piece's stored position. This would be implemented upon as I keep working on the project.
+## Included source snapshot
 
-## Requirements and running
+The checked-in source and supplied ZIP archives contain the console movement-validation snapshot. The Swing interface, collections/generics integration, and GUI event handlers described above are not present in these files yet. No new implementation code was added in this documentation update.
 
-Use JDK 17 or newer. No external libraries are required.
+## Run the included source
+
+Requires JDK 17 or newer, with no external libraries.
 
 ```sh
 ./build.sh
 java -cp out chess.app.ChessMoveValidator
 ```
 
-Enter six different piece types, each piece's color and starting coordinates, followed by one target square. The program reports whether each selected piece can reach that target.
+Enter six different piece types, their colors and starting coordinates, followed by a target square. This snapshot validates movement geometry only; it does not implement a complete chess match or update piece positions after validation.
 
-## Structure
+## Files
 
-- `src/chess/app/ChessMoveValidator.java`: console entry point and input handling.
-- `src/chess/board/`: board coordinate validation.
-- `src/chess/enums/`: piece types, colors, and columns.
-- `src/chess/figures/`: piece implementations and shared hierarchy.
-- `src/chess/interfaces/`: movement and coordinate contracts.
-- `src/chess/exceptions/`: invalid piece, coordinate, and movement errors.
-- `docs/`: generated API documentation, rebuilt from this source.
+- `src/`: Java source, organized by application, board, pieces, enums, interfaces, and exceptions.
+- `docs/`: generated Javadoc for the checked-in source.
+- `tests/ChessMovementTest.java`: representative movement and input-validation checks.
+- `build.sh`: Java 17 build script.
+- `archives/Chess-Game-Java-Source.zip`: complete original supplied Java source archive.
+- `archives/Chess-Game-Javadoc.zip`: complete original supplied HTML Javadoc archive.
+
+Archive contents are preserved as supplied, including their internal names and contributor credits.
 
 ## Verification
 
@@ -41,18 +45,6 @@ javac --release 17 -cp out -d out tests/ChessMovementTest.java
 java -cp out ChessMovementTest
 ```
 
-The check covers representative moves for all six pieces, invalid moves/coordinates, and duplicate-piece detection. It is a focused smoke test, not a complete chess-rules test suite.
-
-## Rebuild API documentation
-
-The checked-in docs were generated with JDK 25:
-
-```sh
-javadoc --no-fonts -author -version -d docs -sourcepath src -subpackages chess -doctitle 'Chess Move Validator API' -windowtitle 'Chess Move Validator API'
-```
-
-For a JDK that does not support `--no-fonts`, omit that option. Open `docs/index.html` in a browser or serve the repository locally with `python3 -m http.server 8000`.
-
 ## Contributors
 
-The original application credits **Aredth Sanchez, Sofia Vargas, and Ben Silva**. These credits remain in the source. This repository replaces comments with project-specific documentation.
+Original source credits Aredth Sanchez, Sofia Vargas, and Ben Silva. Those credits remain intact.
